@@ -1,0 +1,33 @@
+html{
+    margin-top: -21px; /* The html doc have some global margin by default. We can use negative values to reduce space around elements*/
+    margin-left: -8px;
+}
+h1{
+    border: 1px solid;
+    width: 300px;
+}
+p{
+    border: 1px solid;
+    width:  250px;
+    padding: 25px;
+}
+#p1{
+    margin: 25px;
+}
+#p2{
+    margin: 25px 75px 25px 75px; /* Multiple values are assigned starting from the northern side clockwise */
+}
+/*
+#p3{
+    margin: 20%;
+}
+*/
+#p4{
+    margin-left: auto; /* Automatically sticks to the right side, no matter what the size of the browser window is */
+}
+#p5{
+    margin-right: auto;
+}
+#p6{
+    margin: auto; /* Centers the element horizontally*/
+}

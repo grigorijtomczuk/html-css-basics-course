@@ -1,0 +1,37 @@
+/* with CSS properties, if you have multiple values assigned to the same property, the stylesheet will actually end up using the most recent (the lowest) value assigned to that specific property */
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    border-bottom-style: dotted; /* applies a styled side of a border to the element */
+    border-top-style: dotted;
+    border-left-style: dotted;
+    border-right-style: dotted;
+
+    border-left-width: 10px;
+    border-color: white; /* also defines the color of the whole border (all of the 4 parts) */
+    border-left-color: violet;
+
+    font-family: 'Fira Code', monospace;
+    padding: 20px;
+}
+
+p{
+    padding: 5px; /* defines the distance between the content and the border */
+    border-style: solid; /* applies a whole styled border to the element */
+    border-style: dashed;
+    border-style: dotted;
+    border-style: double;
+    border-style: ridge;
+    border-style: groove;
+    border-style: inset;
+    border-style: outset;
+    border-width: 6px 3px 6px 3px ; /* with the "border-width" property you can define a single number or 4 numbers (apply width accordingly and separately to every border-side starting from the northern side clockwise) */
+    border-color: cornflowerblue;
+    border-radius: 10px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 1.25em;
+}

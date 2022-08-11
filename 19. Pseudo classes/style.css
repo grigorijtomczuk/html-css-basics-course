@@ -1,0 +1,32 @@
+a:link{ /* targets every hyperlinked part of the element */
+    color: greenyellow ;
+}
+a:visited{ /* targets every visited hyperlinked part */
+    color: rgb(255, 105, 105);
+}
+button:hover{ /* targets every element that the mouse cursor is being hovered on */
+    background-color: rgb(255, 105, 105);
+}
+button:active{ /* targets every element that is being held or clicked  */
+    background-color: rgb(214, 74, 74);
+}
+li:first-child{ /* targets the fist item in a list */
+    background-color: antiquewhite;
+}
+li:last-child{ /* targets the last item in a list */
+    background-color: blueviolet;
+}
+li:nth-child(odd){ /* use words "even", "odd" or numbers to target specific items in a list */
+    background-color: aqua;
+}
+li:nth-child(3n+1){
+    /*
+        :nth-child(an+b)
+        a = cycle size
+        n = counter (starts at 0)
+        b = offset value
+    */
+    background: linear-gradient(to right, rgb(51, 229, 51), white);
+    opacity: 0.5;
+    border: 1px solid;
+}

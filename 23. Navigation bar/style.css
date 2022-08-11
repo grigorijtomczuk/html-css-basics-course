@@ -1,0 +1,26 @@
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #dddddd;
+}
+li a{
+    float: left;
+    display: block;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-right: 1px solid black;
+    min-width: 60px;
+}
+li a:hover{
+    background-color: #aaaaaa;
+    animation: myGlowAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes myGlowAnimation{
+    50%{text-shadow: 0px 0px 15px #8d4aff;}
+}
