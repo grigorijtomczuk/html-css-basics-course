@@ -1,0 +1,16 @@
+body{
+    background-color: #111111;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px; /*16px or 1em by default*/
+    text-decoration: normal; /* for example: underline wavy blue */
+    color: #00AA00;
+    background-color: #222222;
+}
+h1{
+    font-family: 'Arvo', 'Ink Free', serif;
+    color: #00FF00;
+}

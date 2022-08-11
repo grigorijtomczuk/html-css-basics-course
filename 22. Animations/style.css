@@ -1,0 +1,58 @@
+#p1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 85px;
+    text-align: center;
+    margin: 0px;
+}
+#p1:hover{ /* The animation plays while the mouse curosr is hovering over the element. Once it stops hovering, the animation ceases. */
+    animation: myColorAnimation; /* Assign an animation to the element */
+    animation: myRotateAnimation;
+    animation: myTranslate;
+    animation: myScale;
+    animation: myOpacity;
+    animation: myFont;
+    animation-duration: 5s; /* Duraiton of the animation */
+    animation-iteration-count: infinite; /* How many times to repeat the animation (s, ms, "infinite") */
+}
+
+@keyframes myColorAnimation{
+    /* Two steps (start and end points) */ 
+        from{background-color: red;}
+        to{background-color: blue;}
+
+    /* Multiple steps (indicate steps as percents of the animation completion) */
+    0%{background-color: red;}
+    14%{background-color: orange;}
+    28%{background-color: yellow;}
+    42%{background-color: green;}
+    56%{background-color: cyan;}
+    70%{background-color: blue;}
+    84%{background-color: purple;}
+    100%{background-color: red;}
+}
+
+@keyframes myRotateAnimation{
+    100%{transform: rotate(360deg) rotateX(360deg);}
+}
+
+@keyframes myTranslate{
+    50%{transform: translate(500px,250px);} /* After reaching 50% of the animation it will start resseting so it is in the default state by reaching 100% */
+}
+
+@keyframes myScale{
+    50%{transform: scale(2,2);}
+}
+
+@keyframes myOpacity{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes myFont{
+    0%{font-size: 85px ;}
+    50%{font-size: 400px;}
+    100%{font-size: 85px;}
+}
