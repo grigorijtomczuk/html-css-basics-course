@@ -1,32 +1,46 @@
-a:link{ /* targets every hyperlinked part of the element */
-    color: greenyellow ;
+a:link {
+	/* targets every hyperlinked part of the element */
+	color: greenyellow;
 }
-a:visited{ /* targets every visited hyperlinked part */
-    color: rgb(255, 105, 105);
+
+a:visited {
+	/* targets every visited hyperlink */
+	color: rgb(255, 105, 105);
 }
-button:hover{ /* targets every element that the mouse cursor is being hovered on */
-    background-color: rgb(255, 105, 105);
+
+button:hover {
+	/* targets the state of an element when the cursor is being hovered on it */
+	background-color: rgb(255, 105, 105);
 }
-button:active{ /* targets every element that is being held or clicked  */
-    background-color: rgb(214, 74, 74);
+
+button:active {
+	/* targets the state of an element when it's being held or clicked */
+	background-color: rgb(214, 74, 74);
 }
-li:first-child{ /* targets the fist item in a list */
-    background-color: antiquewhite;
+
+li:first-child {
+	/* targets the fist element in a group of sibling elements */
+	background-color: antiquewhite;
 }
-li:last-child{ /* targets the last item in a list */
-    background-color: blueviolet;
+
+li:last-child {
+	/* targets the last element in a group of sibling elements */
+	background-color: blueviolet;
 }
-li:nth-child(odd){ /* use words "even", "odd" or numbers to target specific items in a list */
-    background-color: aqua;
+
+li:nth-child(odd) {
+	/* targets either one specific element or a periodic group of elements; "even" and "odd" values are acceptable */
+	background-color: aqua;
 }
-li:nth-child(3n+1){
-    /*
-        :nth-child(an+b)
-        a = cycle size
-        n = counter (starts at 0)
-        b = offset value
-    */
-    background: linear-gradient(to right, rgb(51, 229, 51), white);
-    opacity: 0.5;
-    border: 1px solid;
+
+li:nth-child(3n + 1) {
+	/*
+		:nth-child(an+b), where:
+		a = cycle size;
+		n = counter (starts at 0);
+		b = offset value.
+	*/
+	background: linear-gradient(to right, rgb(51, 229, 51), white);
+	opacity: 0.5;
+	border: 1px solid;
 }

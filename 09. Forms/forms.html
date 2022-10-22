@@ -1,101 +1,103 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <title>A form website!</title>
-    </head>
-    <body>
-        <form action="" style="background-color: aqua; padding: 20px; border-radius: 20px;"> <!-- put a script in the "action" attribute -->
-            <label for="first_name">First Name:</label> <!-- the "for" attribute assigns an id to a label; if the id is the same with the input (or other type of control) the label will redirect the cursor onto the input field once the label was clicked -->
-            <input type="text" id="first_name" name="first_name" placeholder="Tom"> <!--
-            the "id" attribute is the client-side identifier (mostly used for CSS and JS to uniquely identify a specific element);
-            ---
-            the "name" attribute is used during a form submission to post or get the values that we submit when we hit a submit button (commonly assigned the same as the id) (this is only used when we're using a server-side language such as PHP, etc.)
-            -->
-
-            <br><br>
-
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" placeholder="Cruise">
-            
-            <br><br>
-
-            <label>Title:</label>
-            <input type="radio" value="Mr." id="Mr." name="title"> <!-- Create a radio button -->
-            <label for="Mr.">Mr.</label>
-            <input type="radio" value="Mrs." id="Mrs." name="title">
-            <label for="Mrs.">Mrs.</label>
-            <input type="radio" value="Miss." id="Miss." name="title">
-            <label for="Miss.">Miss.</label>
-            <input type="radio" value="PhD" id="PhD" name="title">
-            <label for="PhD">PhD</label>
-
-            <br><br>
-
-            <label for="payment">Payment:</label>
-            <select name="payment" id="payment"> <!-- "select" creates a dropdown menu -->
-                <option value="visa">Visa</option> <!--"option" represents an option within a "select" drop-down list-->
-                <option value="mastercard">Mastercard</option>
-                <option value="giftcard">Giftcard</option>
-                <option value="check">Check</option>
-            </select>
-
-            <br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="tomcruise@gmail.com"> <!-- Create an email input -->
-            <!-- the email type input lets the browser know that there's supposed to be an email entered and throws an alert if the user is trying to submit smth in it without a "@" sign -->
-
-            <br><br>
-
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday" min="2000-01-01" max="2010-01-01"> <!-- Create a date input (not supported by Safari) -->
-            <!-- the date type input throws an alert if the user is trying to submit a date in it that is earlier (later) than the date in the "min" ("max") attribute-->
-
-            <br><br>
-
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1"> <!-- Create a quantity input -->
-            <!-- the number type input throws an alert if the user is trying to submit a number that is beyond the "min" and "max" attributes' values; you can enter a default value by using the "value" attribute -->
-
-            <br><br>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone"> <!-- Create a phone number input -->
-            <!-- the tel type input just suggests the user to type in a phone number -->
-
-            <br><br>
-
-            <label for="pass">Password:</label>
-            <input type="password" id="pass" name="pass" maxlength="12"> <!-- Create a password input -->
-            (no more than 12 characters)
-            <!--"maxlength" restricts the maximum amount of symbols entered-->
-
-            <br><br>
-
-            <label for="rate">Rate us:</label>
-            1<input type="range" id="rate" name="rate" step="25" value="50">5 <!-- Create a slider input -->
-            <!-- the "step" attribute is set to some value that 100 is preferably divisible by (as the slider is 0 to 100%) -->
-
-            <br><br>
-
-            <label for="subscribe">Subscribe:</label>
-            <input type="checkbox" id="subscribe" name="subscribe"> <!-- Create a checkbox input -->
-
-            <br><br>
-
-            <label for="some_file">Upload a file:</label>
-            <input type="file" id="some_file" name="some_file" accept=".txt,.png" multiple> <!-- Create a file input -->
-            <!-- the "accept" attribute limits the acceptable types of files; the "multiple" attribute allows the user to upload multiple files -->
-
-            <br><br>
-
-            <input type="reset"> <!--Form reset button-->
-
-            <br><br>
-
-            <input type="submit"> <!-- once the submit button is clicked, the html file sends the info from this form to whatever page listed within the "action" attribute of the "form" tag -->
-        </form>
-    </body>
-
-</html>  
+	<head>
+		<title>09. Forms</title>
+	</head>
+	<body>
+		<!-- put a script in the "action" attribute -->
+		<form action="" style="background-color: aqua; padding: 20px; border-radius: 20px;">
+			<!-- the "for" attribute assigns an id to a label; if the id is the same with the input (or other type of control) the label will redirect the cursor onto the input field once the label was clicked -->
+			<label for="first_name">First Name:</label>
+			<!--
+				the "id" attribute is a client-side identifier (mostly used for CSS and JS to uniquely identify a specific element);
+				---
+				the "name" attribute is used during a form submission to post or get the values that we submit when we hit a submit button (				assigned the same as the id); this is only used when we're using a server-side technology such as PHP, etc.
+			-->
+			<input type="text" id="first_name" name="first_name" placeholder="Tom">
+			<br>
+			<br>
+			<label for="last_name">Last Name:</label>
+			<input type="text" id="last_name" name="last_name" placeholder="Cruise">
+			<br>
+			<br>
+			<!-- We can't assign the "for" value to the next label because its input is a group of radio buttons -->
+			<label>Title:</label>
+			<!-- Create a radio button -->
+			<input type="radio" value="Mr." id="Mr." name="title">
+			<label for="Mr.">Mr.</label>
+			<input type="radio" value="Mrs." id="Mrs." name="title">
+			<label for="Mrs.">Mrs.</label>
+			<input type="radio" value="Miss." id="Miss." name="title">
+			<label for="Miss.">Miss.</label>
+			<input type="radio" value="PhD" id="PhD" name="title">
+			<label for="PhD">PhD</label>
+			<br>
+			<br>
+			<label for="payment">Payment:</label>
+			<!-- <select> tag creates a dropdown menu -->
+			<select name="payment" id="payment">
+				<!-- <option> tag represents an option within a <select> drop-down list -->
+				<option value="visa">Visa</option>
+				<option value="mastercard">Mastercard</option>
+				<option value="giftcard">Giftcard</option>
+				<option value="check">Check</option>
+			</select>
+			<br>
+			<br>
+			<label for="email">Email:</label>
+			<!-- the email type input lets the browser know that there's supposed to be an email entered and throws an alert if the user is trying to submit something that is not an email -->
+			<!-- Create an email input -->
+			<input type="email" id="email" name="email" placeholder="tomcruise@gmail.com">
+			<br>
+			<br>
+			<label for="birthday">Birthday:</label>
+			<!-- the date type input throws an alert if the user is trying to submit a date in it that is beyond the date value in the "min" (or "max") attribute -->
+			<!-- Create a date input (datepicking is not supported by some browsers, like Safari) -->
+			<input type="date" id="birthday" name="birthday" min="2000-01-01" max="2010-01-01">
+			<br>
+			<br>
+			<label for="quantity">Quantity:</label>
+			<!-- the number type input throws an alert if the user is trying to submit a number that is beyond the "min" and "max" values; you can enter a default value by assigning the "value" attribute -->
+			<!-- Create a quantity input -->
+			<input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+			<br>
+			<br>
+			<label for="phone">Phone Number:</label>
+			<!-- the tel type input just suggests the user to type in a phone number -->
+			<!-- Create a phone number input -->
+			<input type="tel" id="phone" name="phone">
+			<br>
+			<br>
+			<label for="pass">Password:</label>
+			<!-- Create a password input -->
+			<!-- "maxlength" restricts the maximum amount of symbols entered -->
+			<input type="password" id="pass" name="pass" maxlength="12"> (no more than 12 characters)
+			<br>
+			<br>
+			<label for="rate">Rate us:</label>
+			<!-- Create a slider input -->
+			<!-- the "step" attribute is set to some value that is preferably a divisor of 100 (as a slider contains 0% to 100%) -->
+			1<input type="range" id="rate" name="rate" step="25" value="50">5
+			<br>
+			<br>
+			<label for="subscribe">Subscribe:</label>
+			<!-- Create a checkbox input -->
+			<input type="checkbox" id="subscribe" name="subscribe">
+			<br>
+			<br>
+			<label for="some_file">Upload a file:</label>
+			<!-- Create a file input -->
+			<!-- the "accept" attribute limits the file extensions allowed to submit; the "multiple" attribute allows the user to upload multiple files -->
+			<input type="file" id="some_file" name="some_file" accept=".txt,.png" multiple>
+			<br>
+			<br>
+			<!-- Form reset button (deletes all of the entered data) -->
+			<input type="reset">
+			<br>
+			<br>
+			<!-- Form submit button -->
+			<input type="submit">
+			<!-- once the submit button is clicked, the html document sends the data from this form to whatever document presented within the "action" attribute of the <form> tag -->
+		</form>
+	</body>
+</html>

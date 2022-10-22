@@ -1,20 +1,29 @@
-.container{
-    background-color: #ffafdf;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap; /* nowrap - the elements within are resized (compressed) if there's not enough room; wrap - the elements within are responsive (not compressed) and pushed down to the next row if there's not enough room */
-    flex-direction: row; /* row - default; column - place items in a column; row-reverse, column-reverse - reversed order of displaying items */
-    justify-content: center; /* flex-start - default (left); flex-end - right; center - centers items horizontally within a flexbox; space-around - any additional space appears between the items; space-between - any additional space appears between the items, but remains the same on the edges of the flexbox */
-    align-items: center; /* flex-start - default (top); flex-end - bottom; center - centers items vertically within a flexbox; */
+.container {
+	background-color: #ffafdf;
+	height: 400px;
+	display: flex;
+
+	flex-wrap: wrap;
+	/* nowrap - the elements within are resized (compressed) if there's not enough room; wrap - the elements within are responsive (not compressed) and pushed down to the next row if there's not enough room */
+
+	flex-direction: row;
+	/* row - default; column - place items in a column; row-reverse, column-reverse - reversed order of displaying items */
+
+	justify-content: center;
+	/* flex-start - default (left); flex-end - right; center - centers items horizontally within a flexbox; space-around - possible additional space appears on the edges and between the items; space-between - possible additional space appears between the items, but remains the same on the edges of the flexbox */
+
+	align-items: center;
+	/* flex-start - default (top); flex-end - bottom; center - centers items vertically within a flexbox; */
 }
-.container div{
-    color: white;
-    background: linear-gradient(to top, #c9fafa, #fea9fa);
-    text-shadow: 3px 3px 10px #888888;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    font-size: 50px;
-    margin: 5px;
+
+.container div {
+	color: white;
+	background: linear-gradient(to top, #c9fafa, #fea9fa);
+	text-shadow: 3px 3px 10px #888888;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px; /* one of the methods to center text vertically is to set its line-height equal to its box height */
+	font-size: 50px;
+	margin: 5px;
 }

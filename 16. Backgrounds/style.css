@@ -1,16 +1,19 @@
-html{
-    background:  linear-gradient(grey, black); /* Creates a linear gradient */
-    background-image: url("images/bg.jpg"); /* the "url()" function accepts the path to the image file starting from the folder the CSS doc is located in (or just a file name if it's in the same folder)*/
-    /* The backround is not attached to the whole document window, but to the content presented in it */
-    background-repeat: no-repeat; /* Disable bg repeating */
-    background-position: center; /* Center the bg (useful with images)*/
-    background-size: cover; /* Covers the entire page */
-    background-attachment: fixed; /*Fixes the bg so it's not moving along with scrolling*/
+html {
+	background: linear-gradient(grey, black); /* Creates a linear gradient */
+	/* the "url()" function accepts URL of an item */
+	background-image: url("./images/bg.jpg");
+	background-repeat: no-repeat; /* Disables background repeating */
+	background-position: center; /* Centers the background (useful with images) */
+	background-size: cover; /* Covers the entire page */
+	background-attachment: fixed; /* Fixes the background so it's not moving along with scrolling */
 }
-h1{
-    background: linear-gradient(red,orange,yellow,green,cyan,blue,purple);
+
+h1 {
+	background: linear-gradient(red, orange, yellow, green, cyan, blue, purple);
 }
-#myText{
-    color: white;
-    background: linear-gradient(to right,grey,black); /* add "to" and the name of a side in the first place of the gradient function to change  its direction */
+
+#myText {
+	color: white;
+	/* add "to {direction}" as the first argument of a gradient function to change its direction */
+	background: linear-gradient(to right, grey, black);
 }

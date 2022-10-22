@@ -1,20 +1,17 @@
-h1{
-    border: 1px solid;
-    width: 200px;
-    padding: 25px;
-    background-color: black;
-    color: white;
-    border-color: black;
-
-    text-shadow: -5px -5px 10px red, 0px 0px 15px yellow; /* Targets text within the element*/
-    /*
-        Positive values move things to the right and down. 
-        1. horizontal distance
-        2. vertical distance
-        3. blur strength
-        4. color
-        You can add as many shadows as you want by separating the sets with comma.
-    */
-     
-    box-shadow: 10px 10px 20px grey; /* Targets the entire element */
+h1 {
+	border: 1px solid white;
+	width: 200px;
+	padding: 25px;
+	background-color: black;
+	color: white;
+	text-shadow: -5px -5px 10px red, 0px 0px 15px yellow; /* targets text within the element */
+	/*
+		Positive values move things right and down. The "text-shadow" value order:
+			1. horizontal offset
+			2. vertical offset
+			3. blur strength
+			4. color
+		You can add as many shadows as you like by separating value sets with commas.
+	*/
+	box-shadow: 10px 10px 20px grey; /* targets the element's border */
 }

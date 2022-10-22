@@ -1,37 +1,46 @@
-/* with CSS properties, if you have multiple values assigned to the same property, the stylesheet will actually end up using the most recent (the lowest) value assigned to that specific property */
-body{
-    background-color: black;
-    color: white;
+/* in CSS, if you have multiple values assigned to the same property, the stylesheet will use the most recent (the lowest) value assigned to that specific property */
+
+body {
+	background-color: black;
+	color: white;
 }
 
-h1{
-    border-bottom-style: dotted; /* applies a styled side of a border to the element */
-    border-top-style: dotted;
-    border-left-style: dotted;
-    border-right-style: dotted;
-
-    border-left-width: 10px;
-    border-color: white; /* also defines the color of the whole border (all of the 4 parts) */
-    border-left-color: violet;
-
-    font-family: 'Fira Code', monospace;
-    padding: 20px;
+h1 {
+	border-bottom-style: dotted; /* applies a styled side of a border to the element */
+	border-top-style: dotted;
+	border-left-style: dotted;
+	border-right-style: dotted;
+	border-left-width: 10px;
+	border-color: white; /* also defines the color of the whole border (all of the 4 parts) */
+	border-left-color: violet;
+	font-family: "Fira Code", monospace;
+	padding: 20px;
 }
 
-p{
-    padding: 5px; /* defines the distance between the content and the border */
-    border-style: solid; /* applies a whole styled border to the element */
-    border-style: dashed;
-    border-style: dotted;
-    border-style: double;
-    border-style: ridge;
-    border-style: groove;
-    border-style: inset;
-    border-style: outset;
-    border-width: 6px 3px 6px 3px ; /* with the "border-width" property you can define a single number or 4 numbers (apply width accordingly and separately to every border-side starting from the northern side clockwise) */
-    border-color: cornflowerblue;
-    border-radius: 10px;
-
-    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 1.25em;
+p {
+	/*
+		Shorthand properties are CSS properties that let you set the values of multiple other CSS properties simultaneously. Using a shorthand property, you can write more concise (and often more readable) stylesheets, saving time and energy.
+		---
+		For properties like padding, margin, border, etc. you can use:
+			- 1 value (will apply to every side of an element);
+			- 2 values (the 1st will apply to the north and the south sides of an element, the 2nd will apply to the west and the east sides);
+			- 3 values (works just like with 2 values assigned, but the 3rd value will apply to the south side of an element);
+			- 4 values (starting from the north side of an element each value will apply clockwise: 1st - north, 2nd - east, 3rd - south, 4th - west).
+		---
+		Consider that you can use different kinds of values within a property only if they are unique and single ("border: 2px 5px solid yellow" won't work; use "border: 2px solid yellow" instead)
+	*/
+	padding: 25px; /* a shorthand property; defines the distance between the content and the border */
+	border-style: solid; /* applies a whole styled border to the element */
+	border-style: dashed;
+	border-style: dotted;
+	border-style: double;
+	border-style: ridge;
+	border-style: groove;
+	border-style: inset;
+	border-style: outset;
+	border-width: 6px 3px 6px 3px; /* another shorthand property */
+	border-color: cornflowerblue;
+	border-radius: 10px; /* also a shorthand property (there are more) */
+	font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+	font-size: 1.25em; /* the "em" unit is equal to the font size of an element */
 }

@@ -1,63 +1,73 @@
-/* Text alignment applies to text and is relative to a specific element */
-p.textAlignment{
-    border: 1px solid;
-    width: 250px;
-}
-#p1{
-    text-align: left;
-}
-#p2{
-    text-align: center;
-}
-#p3{
-    text-align: right ;
+/* Text alignment applies only to text */
+
+p.text_alignment {
+	border: 1px solid;
+	width: 250px;
 }
 
-/* Float property allows the other elements to flow around this element on one of the sides */
-img{
-    float: left;
-    margin: 5px;
-}
-p.floatProperty{
-    width: 300px;
-}
-#textBlock{
-    border: 1px solid;
-    width: 300px;
-    padding: 10px ;
+.text_alignment#p1 {
+	text-align: left;
 }
 
-/* The position property is used to place an element somewhere on the page */
-h1.positionProperty{
-    border: 1px solid;
-    background-color: yellow;
-    width: 200px;
-    position: fixed; /* fixed in place within the viewport */
-    position: relative; /* relative to the normal postion */
-    position: sticky; /* sticks to the viewport while scrolling */
-    position: static; /* default */
-    top: 15px;
-    left: 15px;
+.text_alignment#p2 {
+	text-align: center;
 }
-p.positionProperty{
-    width: 500px;
+
+.text_alignment#p3 {
+	text-align: right;
 }
-#box1{
-    position: relative;
-    background-color: lightgray;
-    width: 200px;
-    height: 200px;
-    border: 1px solid;
-    top: 150px;
-    margin-left: auto;
-    margin-right: auto;
+
+/* The "float" property allows other elements to "flow" around the element on one of the sides */
+
+#text_block {
+	border: 1px solid;
+	width: 300px;
+	padding: 10px;
 }
-#box2{
-    position: absolute; /* position is relative to its positioned ancestor (otherwise it's relative to the viewport) */
-    background-color: gray;
-    width: 100px;
-    height: 100px;
-    border: 1px solid;
-    top: 50px;
-    left: 50px;
+
+img.float_property {
+	float: left;
+	margin: 5px;
+}
+
+p.float_property {
+	width: 300px;
+}
+
+/* The "position" property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky) */
+h1.position_property {
+	border: 1px solid;
+	background-color: yellow;
+	width: 200px;
+	position: absolute; /* relative to the positioned ancestor */
+	position: fixed; /* fixed in place within the viewport */
+	position: relative; /* relative to the normal postion */
+	position: sticky; /* sticks to the viewport while scrolling */
+	position: static; /* default (according to the normal flow of the page) */
+}
+
+p.position_property {
+	width: 500px;
+}
+
+#box1 {
+	position: relative;
+	/* #box1 is an ancestor of #box2 */
+	background-color: lightgray;
+	width: 200px;
+	height: 200px;
+	border: 1px solid;
+	top: 150px;
+	margin: 0 auto;
+}
+
+#box2 {
+	position: absolute;
+	/* #box2 is a child of #box1 */
+	background-color: gray;
+	width: 100px;
+	height: 100px;
+	border: 1px solid;
+	top: 45px;
+	left: 70px;
 }
