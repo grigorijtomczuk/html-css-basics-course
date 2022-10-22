@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- an example of internal CSS styling; -->
+		<style>
+			/* This is a comment */
+			/* p.top {} - targets any <p> tag that has the class of "top" */
+			p.top {
+				background-color: #111111;
+				color: #00aa00;
+			}
+
+			/* h1, p {} - targets every <h1> and <p> tags */
+			h1,
+			p {
+				background-color: #111111;
+				color: #5ae9f3;
+			}
+
+			/* #paragraph1 {} - targets every element that has the id of "paragraph1" */
+			#paragraph1 {
+				background-color: #cca0a0;
+				color: #253625;
+			}
+
+			/*
+				Specificity is an algorithm used by browsers to determine the CSS declaration that is the most relevant to an element. It calculates the "weight" of a CSS selector to determine which rule from competing CSS declarations gets applied to the element.
+				---
+				Specificity prioritization:
+					1. ID column (id selectors) - adds 1-0-0 to the weight value;
+					2. CLASS column (class selectors, attribute selectors and pseudo-classes with single-colon notation) - adds 0-1-0;
+					3. TYPE column (type selectors and pseudo-elements with double-colon notation) - adds 0-0-1.
+			*/
+		</style>
+		<title>13. CSS</title>
+	</head>
+	<body>
+		<!--
+			CSS is an acronym for Cascading Style Sheets; it used in conjunction with HTML to customize the elements and layout of a webpage; we can also use CSS to style multiple pages at once by linking separate independent html files to a single style sheet.
+			The "House" analogy:
+				- HTML = structure (floor, roof, walls);
+				- CSS = decorations (paint, furniture);
+				- JavaScript = functionality (lighting, plumbing).
+			---
+			Ways to include CSS:
+				- Inline (adding the "style" attribute to an element within an html document; useful for adding a few custom elements);
+				- Internal (creating a <style> section within the <head> section of an html document; useful for a single-page website);
+				- External (linking a CSS file to an HTML document to style one or multiple pages of a webpage).
+		-->
+		<!-- an example of inline CSS styling -->
+		<h1 style="background-color: #111111; color: #00aa00">
+			CSS Demo
+		</h1>
+		<!-- the "class" attribute is similar to "id", but it's reserved for a unique grouping for parts of the webpage; useful if you want to target a specific section of the webpage that contains many other different types of elements -->
+		<h1 class="top">Class</h1>
+		<p class="top" id="paragraph1">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas natus voluptates aliquid, sequi, ipsa distinctio provident doloremque debitis quos, sit dignissimos placeat? Natus beatae aspernatur, quo corrupti minus magni.
+		</p>
+		<p id="paragraph2">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas natus voluptates aliquid, sequi, ipsa distinctio provident doloremque debitis quos, sit dignissimos placeat? Natus beatae aspernatur, quo corrupti minus magni.
+		</p>
+	</body>
+</html>

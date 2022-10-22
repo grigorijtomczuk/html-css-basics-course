@@ -3,7 +3,7 @@ p {
 	background-color: red;
 	font-size: 85px;
 	text-align: center;
-	margin: 0px;
+	margin: 0 auto;
 }
 
 #p2 {
@@ -33,6 +33,6 @@ p {
 			4. scaleY()
 			5. translateX()
 			6. translateY()
-		We can also use multiple properties (values) of transformation just by spacing them.
+		We can also use multiple values (functions) of transformation just by spacing them: "transform: scale() translateY() rotate() ..."
 	*/
 }

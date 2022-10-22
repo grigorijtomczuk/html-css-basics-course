@@ -3,7 +3,7 @@ body {
 }
 
 p {
-	/* font-family allows you to list fonts in a specific order, so in case of a font failure there is a reserved one that is listed next (and so on) */
+	/* The "font-family" property allows you to list fonts in a specific order, so in case of a font failure there is a reserved one that is listed next (and so on) */
 	font-family: "Courier New", Courier, monospace;
 	font-style: italic;
 	font-weight: bold;

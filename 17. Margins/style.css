@@ -20,7 +20,7 @@ p {
 }
 
 #p2 {
-	margin: 25px 75px 25px 75px; /* Multiple values are assigned starting from the northern side clockwise (check Shorthand properties) */
+	margin: 25px 75px 25px 75px; /* Multiple values are assigned starting from the northern side clockwise (check "Shorthand CSS properties") */
 }
 
 #p3 {
