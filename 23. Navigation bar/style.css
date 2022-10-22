@@ -7,10 +7,10 @@ ul {
 }
 
 li > a {
-	/* ">" is a child CSS selector; it targets only child elements of an ancestor (while "li a" is a descendant selector which targets child elements and child elements of child elements and so on - like what the word "descendant" means) */
+	/* ">" is a child CSS selector; it targets only child elements of an ancestor (while "li a" is a descendant selector which targets child elements and child elements of child elements and so on - exactly like what the word "descendant" means) */
 	float: left; /* makes <a> tags sit next to each other in a row */
 	display: block;
-	color: initial; /* "initial" keyword returns the default CSS value of this property */
+	color: initial; /* "initial" keyword returns the default CSS value of a property */
 	padding: 10px 15px;
 	text-align: center;
 	text-decoration: none;

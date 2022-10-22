@@ -1,4 +1,4 @@
-/* in CSS, if you have multiple values assigned to the same property, the stylesheet will use the most recent (the lowest) value assigned to that specific property */
+/* in CSS, if you have multiple identical properties assigned, the stylesheet will use the most recent (the lowest) value assigned to that specific property */
 
 body {
 	background-color: black;
@@ -13,7 +13,7 @@ h1 {
 	border-left-width: 10px;
 	border-color: white; /* also defines the color of the whole border (all of the 4 parts) */
 	border-left-color: violet;
-	font-family: "Fira Code", monospace;
+	font-family: monospace;
 	padding: 20px;
 }
 
@@ -27,7 +27,7 @@ p {
 			- 3 values (works just like with 2 values assigned, but the 3rd value will apply to the south side of an element);
 			- 4 values (starting from the north side of an element each value will apply clockwise: 1st - north, 2nd - east, 3rd - south, 4th - west).
 		---
-		Consider that you can use different kinds of values within a property only if they are unique and single ("border: 2px 5px solid yellow" won't work; use "border: 2px solid yellow" instead)
+		!!! Consider that you can use different kinds of values within a property only if they are unique and single ("border: 2px 5px solid yellow" won't work; use "border: 2px solid yellow" instead).
 	*/
 	padding: 25px; /* a shorthand property; defines the distance between the content and the border */
 	border-style: solid; /* applies a whole styled border to the element */
