@@ -1,39 +1,38 @@
-p{
-    width: 100px;
-    background-color: red;
-    font-size: 85px;
-    text-align: center;
-    margin: 0px;
+p {
+	width: 100px;
+	background-color: red;
+	font-size: 85px;
+	text-align: center;
+	margin: 0px;
 }
-#p1{
-    color: black;
-}
-#p2{
-    transform: translateX(50px);
-    transform: translateY(50px);
-    transform: translate(50px,50px); /* translates using both X and Y values */
 
-    transform: rotateX(180deg);
-    transform: rotateY(180deg);
-    transform: rotateZ(180deg);
-    transform: rotate(180deg); /* does the same as rotateZ */
+#p2 {
+	transform: translateX(50px);
+	transform: translateY(50px);
+	transform: translate(50px, 50px); /* translates using both X and Y values */
 
-    transform: scaleX(0.5);
-    transform: scaleY(0.5);
-    transform: scale(0.5, 0.5); /* scales using both X and Y values */
+	transform: rotateX(180deg);
+	transform: rotateY(180deg);
+	transform: rotateZ(180deg);
+	transform: rotate(180deg); /* acts the same as rotateZ */
 
-    transform: skewX(45deg);
-    transform: skewY(45deg);
+	transform: scaleX(0.5);
+	transform: scaleY(0.5);
+	transform: scale(0.5, 0.5); /* scales using both X and Y values */
 
-    transform: matrix(0.5,1,1,0.5,50,50);
-    /*
-        1. scaleX()
-        2. skewY()
-        3. skewX()
-        4. scaleY()
-        5. translateX()
-        6. translateY()
+	transform: skewX(45deg);
+	transform: skewY(45deg);
+	transform: skew(45deg, 45deg); /* skews using both X and Y values */
 
-        We can also use multiple properties of transoframtion just by spacing them.
-    */
+	transform: matrix(0.5, 1, 1, 0.5, 50, 50);
+	/*
+		The "transform: matrix()" argument order:
+			1. scaleX()
+			2. skewY()
+			3. skewX()
+			4. scaleY()
+			5. translateX()
+			6. translateY()
+		We can also use multiple properties (values) of transformation just by spacing them.
+	*/
 }

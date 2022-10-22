@@ -1,9 +1,11 @@
-/*This is a CSS comment*/
-h1{
-    background-color: #111111;
-    color: #00aa00;
+/* this is a comment */
+
+h1 {
+	background-color: #111111;
+	color: #00aa00;
 }
-p{
-    background-color: #111111;
-    color: #9F00EF;
+
+p {
+	background-color: #111111;
+	color: #9f00ef;
 }

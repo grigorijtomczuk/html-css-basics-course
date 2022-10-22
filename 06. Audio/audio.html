@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <title>An audio webpage!</title>
-    </head>
-    <body>
-        <!-- HTML5 only supports: mp3 (most compatible), wav, ogg -->
-        <audio controls loop muted autoplay> <!-- autoplay attribute doesn't work on every browser -->
-            <source src="audio.mp3"> <!--"source" tag allows to specify multiple alternative resources of media (in case some of them fail)-->
-            Your browser doesn't support audio! <!-- alt text -->
-        </audio>
-        <audio src="audio.mp3" controls>
-            Your browser doesn't support audio!
-        </audio>
-    </body>
-
+	<head>
+		<title>06. Audio</title>
+	</head>
+	<body>
+		<!-- HTML5 only supports .mp3 (most compatible), .wav and .ogg files -->
+		<!-- "autoplay" attribute doesn't work on every browser -->
+		<audio controls loop muted autoplay>
+			<!-- <source> tag allows to specify multiple alternative sources of media (in case some of them fail) -->
+			<source src="audio.mp3">
+			<!-- alt text -->
+			Your browser doesn't support audio!
+		</audio>
+		<audio src="audio.mp3" controls>
+			Your browser doesn't support audio!
+		</audio>
+	</body>
 </html>
